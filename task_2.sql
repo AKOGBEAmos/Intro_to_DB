@@ -1,14 +1,3 @@
-CREATE DATABASE IF NOT EXISTS alx_book_store;
-
-USE DATABASE alx_book_store;
-
-/* Creating each tables */
--- Table for Authors
-CREATE TABLE Authors (
-    author_id INT PRIMARY KEY AUTO_INCREMENT,
-    author_name VARCHAR(215) NOT NULL
-);
-
 -- Table for Books
 CREATE TABLE Books (
     book_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -17,6 +6,13 @@ CREATE TABLE Books (
     price DOUBLE NOT NULL,
     publication_date DATE
 )
+
+-- Table for Authors
+CREATE TABLE Authors (
+    author_id INT PRIMARY KEY AUTO_INCREMENT,
+    author_name VARCHAR(215) NOT NULL
+);
+
 -- Table for Customers
 CREATE TABLE Customers (
     customer_id INT PRIMARY KEY AUTO_INCREMENT,
